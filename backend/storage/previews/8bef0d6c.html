@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BearSmart</title>
+    <style>
+        :root {
+            --color-black: rgb(0, 0, 0);
+            --color-gray-light: rgb(229, 231, 235);
+            --color-gray: rgb(238, 238, 238);
+            --color-white: rgb(255, 255, 255);
+            --color-yellow: rgb(250, 204, 21);
+            --color-black-translucent: rgba(0, 0, 0, 0.4);
+            --font-family: 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-family);
+            background-color: var(--color-gray);
+            color: var(--color-black);
+        }
+
+        header {
+            background-color: var(--color-white);
+            padding: 1rem;
+            border-bottom: 1px solid var(--color-gray-light);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--color-black);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--color-yellow);
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        main {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .content {
+            max-width: 800px;
+            background-color: var(--color-white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px var(--color-black-translucent);
+            text-align: center;
+        }
+
+        .buttons {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .button {
+            padding: 0.5rem 1rem;
+            background-color: var(--color-yellow);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: var(--color-black);
+            color: var(--color-white);
+        }
+
+        @media (min-width: 768px) {
+            nav {
+                justify-content: flex-start;
+            }
+
+            nav a {
+                margin: 0 2rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            main {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .content {
+                max-width: 1000px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="https://ualbertafinalscheduler.netlify.app/assets/UofAlogo-C98cRgJH.png" alt="University of Alberta Logo" class="logo">
+            <div>
+                <a href="#">Finals</a>
+                <a href="#">Calendar</a>
+                <a href="#">Resource</a>
+                <a href="#">Advisor</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <h1>BearSmart Your Ultimate Helper</h1>
+            <img src="https://ualbertafinalscheduler.netlify.app/assets/Mascot-BWgLBcSn.png" alt="Mascot" style="max-width: 100%; height: auto;">
+            <div class="buttons">
+                <button class="button">Learn More</button>
+                <button class="button">Get Started</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

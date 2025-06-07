@@ -1,0 +1,21 @@
+# Additional requirements for Agentic Cloner v0.1
+# Add these to your existing dependencies
+
+# AI/ML Services
+anthropic>=0.7.8
+supabase>=2.3.0
+
+# Note: The following dependencies should already be in your existing setup
+# aiohttp>=3.9.0
+# pillow>=10.1.0
+# pydantic>=2.5.0
+# fastapi[standard]>=0.115.12
+# python-dotenv>=1.0.0
+
+# Required API Keys (add to your .env file):
+# BROWSERBASE_API_KEY=your_browserbase_key_here
+# SUPABASE_URL=https://your-project.supabase.co
+# SUPABASE_SERVICE_KEY=your_supabase_service_key
+# ZEP_API_KEY=your_zep_api_key
+# ANTHROPIC_API_KEY=your_claude_api_key
+# GEMINI_API_KEY=your_gemini_fallback_key 

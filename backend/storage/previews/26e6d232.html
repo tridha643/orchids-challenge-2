@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Background Removal</title>
+    <style>
+        :root {
+            --primary-color: rgb(0, 0, 0);
+            --secondary-color: rgb(23, 23, 23);
+            --text-color: rgb(255, 255, 255);
+            --accent-color: oklch(0.546 0.245 262.881);
+            --font-family: 'Arial', 'Helvetica', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-family);
+            color: var(--secondary-color);
+            background-color: var(--primary-color);
+        }
+
+        header {
+            background-color: transparent;
+            padding: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: var(--secondary-color);
+        }
+
+        header button {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            padding: 8px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        header button:hover {
+            background-color: darken(var(--accent-color), 10%);
+        }
+
+        main {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 80px 24px;
+            text-align: center;
+        }
+
+        main h2 {
+            font-size: 72px;
+            color: var(--text-color);
+            margin-bottom: 32px;
+        }
+
+        main p {
+            font-size: 18px;
+            margin-bottom: 32px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 64px;
+        }
+
+        .button-group button {
+            padding: 16px 32px;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .button-group .primary {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            border: none;
+        }
+
+        .button-group .primary:hover {
+            background-color: darken(var(--accent-color), 10%);
+        }
+
+        .button-group .secondary {
+            background-color: transparent;
+            color: var(--secondary-color);
+            border: 1px solid var(--secondary-color);
+        }
+
+        .button-group .secondary:hover {
+            border-color: darken(var(--secondary-color), 10%);
+        }
+
+        section {
+            margin-top: 128px;
+            padding: 0 24px;
+        }
+
+        section h3 {
+            font-size: 36px;
+            color: var(--text-color);
+            margin-bottom: 16px;
+        }
+
+        section p {
+            font-size: 16px;
+            margin-bottom: 32px;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 24px;
+        }
+
+        @media (max-width: 768px) {
+            main h2 {
+                font-size: 48px;
+            }
+
+            section h3 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AI Background Removal</h1>
+        <button>Sign In</button>
+    </header>
+    <main>
+        <h2>Remove Backgrounds with AI Magic</h2>
+        <p>Transform your images instantly with our cutting-edge AI technology. Remove backgrounds from any photo in seconds with professional-quality results.</p>
+        <div class="button-group">
+            <button class="primary">Get Started Free</button>
+            <button class="secondary">Watch Demo</button>
+        </div>
+        <section>
+            <h3>Why Choose Our AI Background Remover?</h3>
+            <p>Experience the future of image editing with our advanced features.</p>
+            <div class="grid">
+                <div>
+                    <h4>Lightning Fast</h4>
+                    <p>Process your images in seconds, not minutes. Our AI technology delivers professional results.</p>
+                </div>
+                <div>
+                    <h4>AI Precision</h4>
+                    <p>Achieve precise background removal with our state-of-the-art AI algorithms.</p>
+                </div>
+                <div>
+                    <h4>Privacy First</h4>
+                    <p>Your images are processed securely with privacy as a top priority.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>Ready to Transform Your Images?</h3>
+            <p>Join thousands of users who trust our AI for professional background removal.</p>
+            <button class="primary">Start Removing Backgrounds Now</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 AI Background Removal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BearSmart</title>
+    <style>
+        :root {
+            --color-black: rgb(0, 0, 0);
+            --color-gray-light: rgb(229, 231, 235);
+            --color-gray-lighter: rgb(238, 238, 238);
+            --color-white: rgb(255, 255, 255);
+            --color-yellow: rgb(253, 224, 71);
+            --font-family: system-ui, "Apple Color Emoji", "Segoe UI Emoji";
+        }
+
+        body {
+            font-family: var(--font-family);
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-gray-lighter);
+            color: var(--color-black);
+        }
+
+        header {
+            background-color: var(--color-white);
+            border-bottom: 1px solid var(--color-gray-light);
+            padding: 1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--color-black);
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: var(--color-white);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+            }
+
+            main {
+                margin: 1rem;
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Calendar</a>
+            <a href="#">Resource</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Final Exams</h1>
+        <!-- Additional content can be added here -->
+    </main>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia, the free encyclopedia</title>
+    <style>
+        :root {
+            --color-black: rgb(0, 0, 0);
+            --color-dark-gray: rgb(32, 33, 34);
+            --color-light-gray: rgb(248, 249, 250);
+            --color-blue: rgb(51, 102, 204);
+            --color-white: rgb(255, 255, 255);
+            --font-sans: Arial, sans-serif;
+            --font-serif: 'Linux Libertine', Georgia, serif;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--color-dark-gray);
+            background-color: var(--color-light-gray);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--color-white);
+            border-bottom: 1px solid var(--color-dark-gray);
+            padding: 10px 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--color-blue);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .content-section {
+            max-width: 800px;
+            width: 100%;
+            background-color: var(--color-white);
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-serif);
+            color: var(--color-black);
+        }
+
+        footer {
+            background-color: var(--color-white);
+            border-top: 1px solid var(--color-dark-gray);
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            main {
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .content-section {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Main Page</a>
+            <a href="#">Contents</a>
+            <a href="#">Current events</a>
+            <a href="#">Random article</a>
+            <a href="#">About Wikipedia</a>
+            <a href="#">Contact us</a>
+        </nav>
+    </header>
+    <main>
+        <section class="content-section">
+            <h1>Welcome to Wikipedia</h1>
+            <p>The free encyclopedia that anyone can edit.</p>
+        </section>
+        <section class="content-section">
+            <h2>Featured Article</h2>
+            <p>Today's featured article is about...</p>
+        </section>
+        <section class="content-section">
+            <h2>In the News</h2>
+            <p>Current events and news updates...</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Wikipedia. All rights reserved.</p>
+    </footer>
+</body>
+</html>

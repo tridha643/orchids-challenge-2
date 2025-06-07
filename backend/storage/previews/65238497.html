@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Background Removal</title>
+    <style>
+        :root {
+            --primary-color: rgb(23, 23, 23);
+            --secondary-color: rgb(255, 255, 255);
+            --accent-color: rgb(0, 0, 0);
+            --font-family: 'Arial, Helvetica, sans-serif';
+            --font-size-base: 16px;
+            --font-size-lg: 18px;
+            --font-size-xl: 24px;
+            --font-size-2xl: 36px;
+            --font-size-3xl: 72px;
+            --spacing-base: 16px;
+            --spacing-lg: 32px;
+            --spacing-xl: 64px;
+            --border-radius: 8px;
+            --transition-duration: 0.15s;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-family);
+            color: var(--primary-color);
+            background-color: var(--secondary-color);
+        }
+
+        header {
+            background-color: var(--secondary-color);
+            padding: var(--spacing-lg);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            font-size: var(--font-size-xl);
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: var(--spacing-base);
+        }
+
+        button {
+            padding: var(--spacing-base) var(--spacing-lg);
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color var(--transition-duration);
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: var(--secondary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            border-color: rgba(0, 0, 0, 0.8);
+        }
+
+        main {
+            max-width: 1280px;
+            margin: var(--spacing-xl) auto;
+            padding: 0 var(--spacing-lg);
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .hero h2 {
+            font-size: var(--font-size-3xl);
+            font-weight: bold;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .hero p {
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .features h3 {
+            font-size: var(--font-size-2xl);
+            font-weight: bold;
+            margin-bottom: var(--spacing-base);
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: var(--spacing-xl);
+        }
+
+        footer {
+            background-color: var(--accent-color);
+            color: var(--secondary-color);
+            padding: var(--spacing-lg);
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            header, main, footer {
+                padding: var(--spacing-base);
+            }
+
+            .hero h2 {
+                font-size: var(--font-size-2xl);
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AI Background Removal</h1>
+        <nav>
+            <button class="btn-primary">Sign In</button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Remove Backgrounds with AI Magic</h2>
+            <p>Transform your images instantly with our cutting-edge AI technology. Remove backgrounds from any photo in seconds with professional-quality results.</p>
+            <div>
+                <button class="btn-primary">Get Started Free</button>
+                <button class="btn-secondary">Watch Demo</button>
+            </div>
+        </section>
+        <section class="features">
+            <div>
+                <h3>Lightning Fast</h3>
+                <p>Process your images in seconds, not minutes. Our AI technology delivers professional results quickly and efficiently.</p>
+            </div>
+            <div>
+                <h3>AI Precision</h3>
+                <p>Experience the future of image editing with our advanced AI features that ensure precise background removal.</p>
+            </div>
+            <div>
+                <h3>Privacy First</h3>
+                <p>Your images are processed securely with a focus on privacy, ensuring your data remains safe.</p>
+            </div>
+        </section>
+        <section class="cta">
+            <h2>Ready to Transform Your Images?</h2>
+            <p>Join thousands of users who trust our AI for professional background removal.</p>
+            <button class="btn-primary">Start Removing Backgrounds Now</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 AI Background Removal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

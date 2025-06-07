@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn: Log In or Sign Up</title>
+    <style>
+        :root {
+            --primary-color: rgb(10, 102, 194);
+            --background-color: rgb(245, 247, 249);
+            --text-color: rgb(0, 0, 0);
+            --secondary-text-color: rgba(0, 0, 0, 0.6);
+            --button-primary-bg: rgb(10, 102, 194);
+            --button-secondary-bg: rgba(0, 0, 0, 0.3);
+            --font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Fira Sans', 'Ubuntu', 'Oxygen', 'Oxygen Sans', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-family);
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        section {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            margin: 0 0 1rem 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+        }
+
+        .button-primary {
+            background-color: var(--button-primary-bg);
+        }
+
+        .button-secondary {
+            background-color: var(--button-secondary-bg);
+            color: var(--text-color);
+        }
+
+        .responsive-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        @media (min-width: 768px) {
+            main {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            section {
+                flex: 1 1 calc(50% - 1rem);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            section {
+                flex: 1 1 calc(33.333% - 1rem);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://static.licdn.com/aero-v1/sc/h/dxf91zhqd2z6b0bwg85ktm5s4" alt="LinkedIn Logo" class="responsive-image">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Learning</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#" class="button button-secondary">Join now</a></li>
+                <li><a href="#" class="button button-primary">Sign in</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Welcome to your professional community</h1>
+            <p>Sign in with email</p>
+            <p>By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement, Privacy Policy, and Cookie Policy.</p>
+            <a href="#" class="button button-primary">Join now</a>
+        </section>
+        <section>
+            <h2>Explore collaborative articles</h2>
+            <p>We’re unlocking community knowledge in a new way. Experts add insights directly into each article, started with the help of AI.</p>
+        </section>
+        <section>
+            <h2>Find the right job or internship for you</h2>
+            <p>Engineering, Business Development, Finance, Administrative Assistant, Retail Associate, Customer Service, Operations, Information Technology, Marketing, Human Resources</p>
+        </section>
+        <section>
+            <h2>Post your job for millions of people to see</h2>
+            <a href="#" class="button button-primary">Post a job</a>
+        </section>
+        <section>
+            <h2>Discover the best software tools</h2>
+            <p>Connect with buyers who have first-hand experience to find the best products for you.</p>
+        </section>
+        <section>
+            <h2>Keep your mind sharp with games</h2>
+            <p>Take a break and reconnect with your network through quick daily games.</p>
+        </section>
+    </main>
+</body>
+</html>

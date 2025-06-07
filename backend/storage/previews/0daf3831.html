@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BearSmart</title>
+    <style>
+        :root {
+            --black: rgb(0, 0, 0);
+            --white: rgb(255, 255, 255);
+            --gray-light: rgb(229, 231, 235);
+            --yellow: rgb(250, 204, 21);
+            --font-family: -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-family);
+            color: var(--white);
+            background-color: var(--black);
+            overflow-x: hidden;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: transparent;
+            z-index: 50;
+            padding: 16px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1152px;
+            padding: 0 32px;
+        }
+
+        nav img {
+            width: 40px;
+            height: 40px;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin-left: 32px;
+            transition: color 0.15s ease-in-out;
+        }
+
+        nav a:hover {
+            color: var(--yellow);
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding-top: 72px;
+            text-align: center;
+        }
+
+        .hero {
+            max-width: 1152px;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+            gap: 32px;
+            padding: 0 32px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            font-weight: bold;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            animation: float-up-down 3s infinite alternate;
+        }
+
+        .cta-button {
+            background-color: var(--black);
+            color: var(--white);
+            padding: 12px 36px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .cta-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        @keyframes float-up-down {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+
+        @media (min-width: 768px) {
+            .hero {
+                flex-direction: row;
+            }
+
+            .hero h1 {
+                font-size: 48px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero h1 {
+                font-size: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="https://via.placeholder.com/40" alt="UAlberta Logo">
+            <div>
+                <a href="https://ualbertafinalscheduler.netlify.app/search">Finals</a>
+                <a href="https://ualbertafinalscheduler.netlify.app/calendar">Calendar</a>
+                <a href="https://ualbertafinalscheduler.netlify.app/resource">Resource</a>
+                <a href="https://ualbertafinalscheduler.netlify.app/advisor">Advisor</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <div>
+                <h1>BearSmart Your Ultimate Helper</h1>
+                <button class="cta-button">Get started</button>
+            </div>
+            <img src="https://via.placeholder.com/690x480" alt="UAlberta Mascot">
+        </div>
+    </main>
+</body>
+</html>

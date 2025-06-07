@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BearSmart</title>
+    <style>
+        :root {
+            --color-black: rgb(0, 0, 0);
+            --color-white: rgb(255, 255, 255);
+            --color-gray-light: rgb(238, 238, 238);
+            --color-yellow: rgb(250, 204, 21);
+            --font-primary: -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-primary);
+            color: var(--color-white);
+            background-color: var(--color-black);
+            overflow-x: hidden;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: transparent;
+            z-index: 50;
+            padding: 16px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1152px;
+            padding: 0 32px;
+        }
+
+        nav img {
+            width: 40px;
+            height: 40px;
+        }
+
+        nav a {
+            color: var(--color-white);
+            text-decoration: none;
+            margin-left: 32px;
+            transition: color 0.15s ease-in-out;
+        }
+
+        nav a:hover {
+            color: var(--color-yellow);
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding-top: 72px;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://ualbertafinalscheduler.netlify.app/assets/Mascot-BWgLBcSn.png') no-repeat center center;
+            background-size: cover;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: bold;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .cta-button {
+            margin-top: 16px;
+            padding: 12px 36px;
+            background-color: var(--color-black);
+            color: var(--color-white);
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .cta-button:hover {
+            background-color: var(--color-yellow);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 40px;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin-left: 0;
+                margin-top: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="https://ualbertafinalscheduler.netlify.app/assets/UofAlogo-C98cRgJH.png" alt="UAlberta Logo">
+            <div>
+                <a href="https://ualbertafinalscheduler.netlify.app/search">Finals</a>
+                <a href="https://ualbertafinalscheduler.netlify.app/calendar">Calendar</a>
+                <a href="https://ualbertafinalscheduler.netlify.app/resource">Resource</a>
+                <a href="https://ualbertafinalscheduler.netlify.app/advisor">Advisor</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>BearSmart Your Ultimate Helper</h1>
+        <button class="cta-button">Get started</button>
+    </main>
+</body>
+</html>
